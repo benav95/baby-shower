@@ -83,7 +83,7 @@ function exportToCSV(gifts, guests, selections) {
   URL.revokeObjectURL(url);
 }
 
-const ADMIN_PASSWORD = "bebe2025";
+const ADMIN_PASSWORD = "beBe2026**";
 
 // ============================================================
 // STYLES
@@ -285,8 +285,8 @@ function GuestView({ gifts, guests, onGuestSaved, onClaimGift, onRefresh }) {
     <div>
       <div className="welcome-hero">
         <span className="big-emoji">🌸</span>
-        <h2>¡Bienvenido al Baby Shower!</h2>
-        <p>Ayúdanos a completar tu información para acceder a la lista de regalos y sorprender a los papás.</p>
+        <h2>¡Bienvenido a nuestro Baby Shower!</h2>
+        <p>Gracias por acompañarnos en este gran día, ¡lo valoramos mucho! Ayúdanos a completar tu información, podrás acceder a la lista de regalos, bebé estará muy feliz con tu muestra de amor.</p>
       </div>
       <div className="card" style={{ maxWidth: 440, margin: "0 auto" }}>
         <div className="card-title">Cuéntanos quién eres</div>
@@ -296,7 +296,7 @@ function GuestView({ gifts, guests, onGuestSaved, onClaimGift, onRefresh }) {
           <input className="form-input" placeholder="Ej: María García" value={guestData.name} onChange={e => setGuestData({ ...guestData, name: e.target.value })} onKeyDown={e => e.key === "Enter" && handleRegister()} />
         </div>
         <div className="form-group">
-          <label className="form-label">¿Cuántos acompañantes traes?</label>
+          <label className="form-label">¿Cuantas personitas nos acompañarán? (cúentate a ti también)</label>
           <input className="form-input" type="number" min="0" max="10" placeholder="0" value={guestData.companions} onChange={e => setGuestData({ ...guestData, companions: e.target.value })} />
         </div>
         <button className="btn btn-primary btn-full" style={{ marginTop: 8 }} onClick={handleRegister}>Ver lista de regalos →</button>
@@ -308,7 +308,7 @@ function GuestView({ gifts, guests, onGuestSaved, onClaimGift, onRefresh }) {
     <div className="success-state">
       <span className="big-emoji">🎁</span>
       <h2>¡Gracias, {currentGuest?.name}!</h2>
-      <p>Tu regalo ha sido reservado con éxito. Los papás estarán muy felices con tu gesto de amor.</p>
+      <p>Tu regalo ha sido reservado con éxito. Bebé estará muy feliz con tu gesto de amor.</p>
       <div style={{ marginTop: 24 }}>
         <div className="claim-confirm">
           <div className="gift-row">
@@ -317,7 +317,7 @@ function GuestView({ gifts, guests, onGuestSaved, onClaimGift, onRefresh }) {
           </div>
         </div>
       </div>
-      <p style={{ color: "#999", fontSize: 13, marginTop: 20 }}>💕 Hasta pronto en el baby shower</p>
+      <p style={{ color: "#999", fontSize: 13, marginTop: 20 }}>💕 Hasta pronto, nos vemos en el baby shower</p>
     </div>
   );
 
@@ -630,7 +630,7 @@ export default function App() {
           <div className="header-icons">🌸 🎀 🌼</div>
           <div className="header-badge">Baby Shower</div>
           <h1>Lista de <span>Regalos</span></h1>
-          <p>¡Celebremos juntos la llegada de un nuevo bebé!</p>
+          <p>¡Queremos que hagas parte de este nuevo paso, celebremos juntos la llegada de un nuevo bebé!</p>
         </header>
 
         <div className="nav">
